@@ -1,17 +1,34 @@
-// code your solution here
+// Code your solution in this file!
+let array=['don','jose','mike','tommy']
 
-function saturdayFun(msg='roller-skate'){
-    return `This Saturday, I want to ${msg}!`
-};
-saturdayFun('bathe my dog');
+const returnFirstTwoDrivers=(array)=>array.slice(0,2)
 
-function mondayWork(message='go to the office'){
-    return `This Monday, I will ${message}.` 
-};
-mondayWork('work from home');
 
-function  wrapAdjective(msg='*'){
-    return function  (txt='special'){
-        return `You are ${msg}${txt}${msg}!`
+
+const returnLastTwoDrivers=(array)=>array.slice(-2)
+
+returnLastTwoDrivers(array)
+
+const selectingDrivers=[returnFirstTwoDrivers,returnLastTwoDrivers];
+
+function createFareMultiplier(int){
+    return(function fareMultiplier(fare){
+        return fare *int;
+    })
+}
+const fareDoubler=function(fare){
+    return (fare *2);
+}
+
+const fareTripler =function(fare){
+    return (fare*3)
+}
+
+function selectDifferentDrivers(array,command){
+    if (command===returnFirstTwoDrivers){
+        return(returnFirstTwoDrivers(array));
+    }
+    else if(command===returnLastTwoDrivers){
+        return (returnLastTwoDrivers(array));
     }
 }
