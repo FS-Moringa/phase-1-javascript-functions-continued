@@ -17,13 +17,3 @@ function wrapAdjective(asteric = '*') {
     
 }
 const result = wrapAdjective('||');
-
-
-// const  printBook = function(book) {
-//     console.log(book);
-// }
-
-// const printBookArrow = (bookArrow) => console.log(bookArrow)
-
-// printBook("REasons why i love you");
-// printBookArrow("You are my strength");
